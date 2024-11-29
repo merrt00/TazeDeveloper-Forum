@@ -1,0 +1,347 @@
+/* Temel stil */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #8595b1;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.card {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+}
+
+.card-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 1.3em;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-size: 1.1em;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-edit {
+    background-color: #007bff;
+    margin-right: 10px;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-edit:hover {
+    background-color: #0056b3;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+/* Yorumlar Yönetimi Tablosu ve Butonlar */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.admin-table th, .admin-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.admin-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.admin-table tr:hover {
+    background-color: #e1f7e1;
+}
+
+.admin-table td a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.admin-table td .btn-edit {
+    background-color: #007bff;
+}
+
+.admin-table td .btn-delete {
+    background-color: #dc3545;
+}
+
+.admin-table td a:hover {
+    opacity: 0.8;
+}
+
+/* Yorum Düzenleme Sayfası */
+.edit-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.edit-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.edit-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.edit-form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+.edit-form button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.edit-form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    .edit-form {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Yorum Düzenleme Sayfası */
+.form-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+}
+
+.form-container h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-container textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1em;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .form-container h1 {
+        font-size: 1.8em;
+    }
+}
+
+/* Geri Butonu Konumlandırma ve Stil Düzenlemeleri */
+.back-button-container {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.back-button {
+    background-color: #4CAF50;  /* Sitenizin ana renk tonu ile uyumlu */
+    color: white;
+    font-size: 1.1em;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Hafif gölge efekti */
+    transition: all 0.3s ease;
+    margin-bottom: 30px;  /* Buton ile içerik arasına boşluk ekledik */
+}
+
+.back-button:hover {
+    background-color: #45a049;  /* Hoverda daha koyu bir yeşil */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Hoverda daha belirgin gölge */
+    transform: translateY(-2px);  /* Hoverda buton yukarı kayar */
+}
+
+.back-button:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .back-button {
+        font-size: 1em;  /* Mobilde buton metni biraz küçülür */
+        padding: 10px 18px;
+    }
+}
+
+
+/* Haber Ekle Butonu */
+.add-button {
+    display: inline-block;
+    background-color: #28a745; /* Yeşil bir ton */
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.add-button:hover {
+    background-color: #218838; /* Daha koyu bir yeşil ton */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Hover'da daha belirgin gölge */
+    transform: translateY(-2px); /* Hover'da yukarı hareket efekti */
+}
+
+.add-button:focus {
+    outline: none; /* Focus durumunda çerçeve olmaması */
+}
+
+@media (max-width: 768px) {
+    .add-button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}

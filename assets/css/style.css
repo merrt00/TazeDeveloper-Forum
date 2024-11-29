@@ -1,0 +1,896 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(188, 205, 144, 0.2) 16%, rgba(144, 212, 167, 0.28) 82%);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.deneme {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sayfa Başlığı */
+.page-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 30px;
+    margin-top: 55px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.thread-grid {
+    display: block;
+    /* Her bir konuyu alt alta sıralamak için */
+    width: 100%;
+    /* Her bir öğe tam genişliği kaplasın */
+}
+
+.thread-card {
+    display: block;
+    /* Her bir kartın alt alta gelmesini sağlar */
+    width: 100%;
+    /* Kartlar tam genişliği kaplasın */
+    margin-bottom: 20px;
+    /* Kartlar arasına boşluk ekler */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Hafif gölge efekti */
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+
+/* Hover efekti */
+.thread-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Konu Başlığı */
+.thread-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    /* Uzun kelimeleri kırarak satır sonunda taşmayı engeller */
+    overflow-wrap: break-word;
+    /* Uzun kelimelerin alanı aşmasını engeller */
+    white-space: normal;
+    /* Başlık içeriği fazla uzun olduğunda satıra sığması için */
+    word-break: break-word;
+    /* Kelimelerin satır sonlarına kırılmasını sağlar */
+
+}
+
+/* Konu İçeriği */
+.thread-content {
+    font-size: 1em;
+    color: #666;
+    width: 90%;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    /* Uzun kelimeleri kırarak satır sonunda taşmayı engeller */
+    overflow-wrap: break-word;
+    /* Uzun kelimelerin alanı aşmasını engeller */
+    white-space: normal;
+    /* Başlık içeriği fazla uzun olduğunda satıra sığması için */
+    word-break: break-word;
+    /* Kelimelerin satır sonlarına kırılmasını sağlar */
+
+}
+
+/* Konu Yazar Bilgisi */
+.thread-author {
+    font-size: 0.9em;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+/* Buton */
+.btn {
+    display: inline-block;
+    background: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Buton Fokus Durumu */
+.btn:focus {
+    outline: 3px solid #45a049;
+}
+
+
+/* Giriş Formu */
+.login-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Giriş Formu */
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Alanları */
+.form-group {
+    margin-bottom: 15px;
+    /* Alanlar arasında daha az boşluk */
+    margin-right: 25px;
+    /* Alanlar arasında daha az boşluk */
+}
+
+/* Form Kontrolleri (Input ve Textarea) */
+.form-control {
+    width: 100%;
+    padding: 8px 12px;
+    /* Daha küçük iç padding */
+    font-size: 0.9em;
+    /* Küçük font boyutu */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* Yuvarlatılmış kenarlar */
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+/* Input Alanı Focus Durumu */
+.form-control:focus {
+    border-color: #4CAF50;
+    /* Yeşil renkte odaklanma */
+    box-shadow: 0 0 8px rgba(72, 206, 92, 0.4);
+    /* Hafif yeşil gölge */
+}
+
+/* Label */
+label {
+    font-size: 0.9em;
+    /* Küçük font boyutu */
+    color: #555;
+}
+
+/* Form Alanlarına Margin Ekle */
+.form-group.mt-3 {
+    margin-top: 12px;
+    /* Üst boşlukları küçült */
+}
+
+/* Buton */
+.btn {
+    padding: 10px 15px;
+    font-size: 0.9em;
+    /* Küçük font boyutu */
+    border-radius: 5px;
+}
+
+.test {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+/* Uyarı Mesajları */
+.alert {
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 25%;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+
+/* Haberler Kısmı */
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #444;
+    overflow: hidden;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.oneri-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.oneri-title {
+    max-width: 100%;
+    font-size: 1.2em;
+    margin: 10px 0 10px 4px;
+    color: #1d1818;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.news-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.news-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 15px;
+}
+
+.news-title {
+    font-size: 1.2em;
+    margin: 10px 0 10px 4px;
+    color: #1d1818;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-date {
+    font-size: 0.9em;
+    margin: 10px 0 10px 10px;
+
+    color: #777;
+}
+
+/* Haber Detayı */
+.news-detail {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-detail h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.news-detail .news-date {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Görselin boyutunu küçültmek için */
+.news-image-detail {
+    width: 100%;
+    /* Görselin genişliği, konteynerin genişliğine uyumlu */
+    max-width: 600px;
+    /* Maksimum genişlik 600px olacak */
+    height: auto;
+    /* Yüksekliği oranlı olarak ayarlama */
+    margin-bottom: 20px;
+    display: block;
+    /* Görselin altındaki boşlukları düzenler */
+    margin-left: auto;
+    /* Ortalamak için */
+    margin-right: auto;
+    /* Ortalamak için */
+}
+
+.news-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Konu Detayları */
+.thread-details {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.thread-details h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.thread-details .thread-content {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.thread-details .thread-meta {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.comments-section {
+    margin-top: 40px;
+}
+
+
+
+
+/* Buton */
+.btn {
+    display: inline-block;
+    background: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Buton Fokus Durumu */
+.btn:focus {
+    outline: 3px solid #45a049;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .thread-card {
+        padding: 15px;
+    }
+
+    .thread-title {
+        font-size: 1.3em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        /* Uzun kelimeleri kırarak satır sonunda taşmayı engeller */
+        overflow-wrap: break-word;
+        /* Uzun kelimelerin alanı aşmasını engeller */
+        white-space: normal;
+        /* Başlık içeriği fazla uzun olduğunda satıra sığması için */
+        word-break: break-word;
+        /* Kelimelerin satır sonlarına kırılmasını sağlar */
+
+    }
+
+    .thread-content {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+    }
+    .news-grid {
+        display: block;
+        /* Her bir konuyu alt alta sıralamak için */
+        width: 100%;
+        /* Her bir öğe tam genişliği kaplasın */
+    }
+
+    .news-card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-bottom: 30px;
+    }
+    
+}
+
+/* Navbar Tasarımı */
+/* 
+.navbar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.navbar .logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .logo a:hover {
+    color: #cecece;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #008d07;
+    transform: translateY(-2px);
+}
+*/
+
+
+/* Responsive Tasarım */
+/*
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+    }
+
+    .navbar .nav-links a {
+        padding: 10px 15px;
+    }
+}
+ */
+
+/* Temel Navbar Stilleri */
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    position: relative;
+
+
+    background-color: #4CAF50;
+    color: white;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin: 0 auto;
+    border-radius:0 0 8px 8px ;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.logo a:hover {
+    color: #cecece;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+
+
+  
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+
+}
+
+.nav-links li a:hover {
+    background-color: #008d07;
+    transform: translateY(-2px);
+}
+
+.search-form {
+    display: flex;
+    gap: 5px;
+    
+}
+
+.search-input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+
+}
+
+.search-button {
+    padding: 8px 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+
+
+    background-color: #0a770f;
+
+
+    border-radius:25px;
+
+    margin-right: 50px;
+}
+
+.search-button:hover {
+    background-color: #05330f;
+}
+
+
+/* Mobil Görünüm İçin Stiller */
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.8em;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2C2F33; /* Modern koyu gri */
+
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 90%;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .menu-content.active {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-links li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-form {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+    .search-button{
+        width: 25%;
+    }
+}
+
+
+
+/* Yorumlar */
+.comment {
+    background: #f9f9f9;
+    border-left: 5px solid #4CAF50;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.comment-meta {
+    font-size: 0.85em;
+    color: #888;
+    margin-top: 10px;
+}
+
+.comment-content {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Yorum Formu */
+.comment-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+.comment-form textarea:focus {
+    border-color: #4CAF50;
+}
+
+.comment-form .btn-submit {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.comment-form .btn-submit:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.comment-form .btn-submit:focus {
+    outline: 3px solid #45a049;
+}
+
+.login-prompt {
+    font-size: 1.1em;
+    color: #007bff;
+}
+
+.login-prompt a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.login-prompt a:hover {
+    text-decoration: underline;
+}
+
+
+/* Geri Butonu Konumlandırma ve Stil Düzenlemeleri */
+.back-button-container {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.back-button {
+    background-color: #4CAF50;
+    /* Sitenizin ana renk tonu ile uyumlu */
+    color: white;
+    font-size: 1.1em;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Hafif gölge efekti */
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    /* Buton ile içerik arasına boşluk ekledik */
+}
+
+.back-button:hover {
+    background-color: #45a049;
+    /* Hoverda daha koyu bir yeşil */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Hoverda daha belirgin gölge */
+    transform: translateY(-2px);
+    /* Hoverda buton yukarı kayar */
+}
+
+.back-button:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .back-button {
+        font-size: 1em;
+        /* Mobilde buton metni biraz küçülür */
+        padding: 10px 18px;
+    }
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 150px;
+    padding: 5px 0;
+    display: none;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.dropdown-menu.d-none {
+    display: none;
+}
+
+.dropdown-menu.d-block {
+    display: block;
+}
+
+.dropdown-menu-custom {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    /* Butondan aşağıya doğru biraz mesafe bırakır */
+    width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 5px;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+

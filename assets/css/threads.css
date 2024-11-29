@@ -1,0 +1,107 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Konteyner */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Konu Detayları */
+.thread-details h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.thread-content {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.thread-meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Yorumlar */
+.comments-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.comment {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-content {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.comment-meta {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Yorum Formu */
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.comment-form .btn-submit {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-form .btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Giriş Yap Uyarısı */
+.login-prompt {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #555;
+}
+
+.login-prompt a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-prompt a:hover {
+    text-decoration: underline;
+}
